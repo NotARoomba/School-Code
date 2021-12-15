@@ -3,6 +3,7 @@ public class NathanAlspaugh {
         System.out.println("Hello World");
         Dog fido = new Dog();
         fido.Speak();
+        System.out.println(fido.eyeColor);
     }
 }
 class Dog {
