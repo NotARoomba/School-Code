@@ -24,7 +24,9 @@ public class AlspaughCakeRunner {
 
         System.out.println(String.format(
                 "=====Cake 1=====\nName: %s\nFlavor: %s\nLayers: %d\nPrice: %.2f\n=====Cake 2=====\nName: %s\nFlavor: %s\nLayers: %d\nPrice: %.2f\n=====Cake 3=====\nName: %s\nFlavor: %s\nLayers: %d\nPrice: %.2f",
-                cake1.cakeName, cake1.flavor, cake1.numLayers, cake1.price, cake2.cakeName, cake2.flavor,
-                cake2.numLayers, cake2.price, cake3.cakeName, cake3.flavor, cake3.numLayers, cake3.price));
+                cake1.getCakeName(), cake1.getFlavor(), cake1.getNumLayers(), cake1.getPrice(), cake2.getCakeName(),
+                cake2.getFlavor(),
+                cake2.getNumLayers(), cake2.getPrice(), cake3.getCakeName(), cake3.getFlavor(), cake3.getNumLayers(),
+                cake3.getPrice()));
     }
 }
