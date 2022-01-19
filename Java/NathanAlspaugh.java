@@ -6,12 +6,15 @@ public class NathanAlspaugh {
         System.out.println(fido.eyeColor);
     }
 }
+
 class Dog {
     int numOfLegs;
     String eyeColor;
+
     public Dog() {
         eyeColor = "Green";
     }
+
     public void Speak() {
         System.out.println("Bark Bark!");
     }
