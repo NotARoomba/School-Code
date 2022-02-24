@@ -10,7 +10,7 @@ public class CYOA {
 }
 
 class Life {
-    public String name;
+    public String name = null;
     public int points;
     public boolean oj;
     public String[] scenes = {
@@ -61,7 +61,7 @@ class Life {
     public int[][] choicePoints = { { 5, 5 }, { 3, 1, 666 }, { -21, 3 } };
 
     public String exe() {
-        name = (String) input("Whats Your name: ", String.class);
+        name = name == null ? (String) input("Whats Your name: ", String.class) : name;
         clear();
         return choiceAndInput(new String[] { "Brush Teeth", "Eat Breakfast" }, new String[] { "Wake Up..." }, 0,
                 new int[] { 5, 5 }) == 0
