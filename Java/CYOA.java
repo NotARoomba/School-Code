@@ -131,7 +131,7 @@ class Life {
                 new int[] { 5, 5 }) == 0
                         ? choiceAndInput(new String[] { "Go outside", "Go to a party" },
                                 new String[] { name + " goes to eat breakfast..." }, 2,
-                                new int[] { 3, 666 }) >= 0
+                                new int[] { 3, 666 }) == 0
                                         ? choiceAndInput(
                                                 new String[] { "Pet a dog", "Go to the park" },
                                                 new String[] { name + " drinks orange juice and pukes..." }, 2,
@@ -180,7 +180,7 @@ class Life {
                                                                                 name + " wakes up in the middle of a desert without a kidney..." })
                         : choiceAndInput(new String[] { "Go outside", "Go to a party" },
                                 new String[] { name + " goes to eat breakfast..." }, 2,
-                                new int[] { 3, 666 }) >= 0
+                                new int[] { 3, 666 }) == 0
                                         ? choiceAndInput(
                                                 new String[] { "Pet a dog", "Go to the park" },
                                                 new String[] { name + " drinks orange juice and pukes..." }, 2,
