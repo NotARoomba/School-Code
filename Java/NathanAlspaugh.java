@@ -1,9 +1,10 @@
 public class NathanAlspaugh {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        Dog fido = new Dog();
-        fido.Speak();
-        System.out.println(fido.eyeColor);
+        // System.out.println("Hello World");
+        // Dog fido = new Dog();
+        // fido.Speak();
+        // System.out.println(fido.eyeColor);
+        // print 1
     }
 }
 
