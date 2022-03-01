@@ -9,8 +9,6 @@ public class charToBin {
         String f = r.nextLine();
         String[] a = f.split(" ");
         int[] b = {};
-        // ((char) 83) + ((char) 99) + ((char) 111) + ((char) 114) + ((char) 101) +
-        // ((char) 58) + ((char) 32)
 
         System.out.println(Arrays.toString(a));
         for (int i = 0; i < a.length; i++) {
@@ -20,7 +18,13 @@ public class charToBin {
             }
         }
         for (int i = 0; i < b.length; i++) {
-            paste += " ((char) Integer.parseInt(\"" + Integer.toBinaryString((int) b[i]) + "\", 2)) +";
+            String h = Integer.toBinaryString((int) b[i]);
+            paste += " ((char) Integer.parseInt((new String() +";
+            for (int c = 0; c < h.length(); c++) {
+                paste += " ((char) " + (int) h.charAt(c) +") +";
+            }
+            paste = paste.substring(0, paste.length() - 1);
+            paste += "), 2)) +";
         }
         System.out.println((paste.substring(0, paste.length() - 1))
                 .replaceAll("\\(\\(char\\) 92\\) \\+ \\(\\(char\\) 110\\)", "((char) 10)")
