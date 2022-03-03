@@ -4,7 +4,7 @@ Nathan Alspaugh
 */
 public class CYOARunner {
     public static void main(String[] args) {
-      CYOA life = new CYOA();
-      life.print(life.exe());
+      CYOA advenure = new CYOA();
+      advenure.print(advenure.startAdventure());
     }
   }
