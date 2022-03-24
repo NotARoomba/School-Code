@@ -7,5 +7,16 @@ public class PetRunner {
         System.out.println();
         System.out.println(fish2.getName());
         System.out.println(fish2.realOrNotReal());
+
+        int total=0;
+        for(int s=1; s<8; s++)
+        {
+           total=total+s;
+        }
+        System.out.println(total);
+        
+
+        
+
     }
 }
