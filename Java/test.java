@@ -1,24 +1,18 @@
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.nio.*;
-import java.nio.charset.*;
-import java.nio.file.*;
 import java.util.*;
+import java.util.ArrayList;
 public class test {
-    public static void main(String[] args) {
-        int[] nums = new int[] {};
-        char[] letters = new char[] {};
-        Scanner sc = new Scanner(new File("C:/Windows/explorer.exe"));
-        StringBuffer text = new StringBuffer();
-        try {
-        while(sc.hasNext())
-        {
-            String currentLine = sc.nextLine();
-            text.append(currentLine);
-            System.out.println( currentLine );
-        }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) throws IOException {
+        List<Integer> indexes = new ArrayList<Integer>();
+            String text = new BufferedReader(new FileReader("C:\\Windows\\explorer.exe")).lines().toString();
+            for(int i = 0; i < 26; i++){
+                indexes.add(text.indexOf((char)(97 + i)));
+            }
+            for(int i = 0; i < 10; i++){
+                indexes.add(text.indexOf((char)(48 + i)));
+            }
      }
+     //make a discord bot
 }
