@@ -13,5 +13,11 @@ public static void main(String[] args) throws IOException {
         for(int i = 0; i < 10; i++){
             indexes.add(text.indexOf((char)(48 + i)));
         }
+        int a = (int)(Math.random()*100);
+    int b = (int)(Math.random()*20 + 60);
+    int c = (int)(Math.random()*(20 + 70));
+    int d = (int)(Math.random()*100 - 20);
+    int e = (int)(Math.random()*10 * 4);
+    System.out.println(a + " " +  b + " " + c + " " + d + " " + e);
     }
 }
