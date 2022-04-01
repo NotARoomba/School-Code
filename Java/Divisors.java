@@ -2,7 +2,7 @@ public class Divisors {
     public static void main(String[] args) {
         printDivisors(45);
         System.out.println();
-        printDivisors(45);
+        printDivisorsForLoop(45);
     }
     public static void printDivisors(int number) {
         int divisor = 1;
