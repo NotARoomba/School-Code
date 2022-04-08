@@ -42,38 +42,43 @@ do {
 // } while (x % 3 != 0);
 // //Answer here:
 
-System.out.println("Loop #4");
-x = 100;
-do {
-    System.out.println(x);
-    x = x / 2;
-} while (x % 2 == 0);
-//Answer here:
+// System.out.println("Loop #4");
+// x = 100;
+// do {
+//     System.out.println(x);
+//     x = x / 2;
+// } while (x % 2 == 0);
+// //Answer here:
 
-System.out.println("Loop #5");
-x = 2;
-do {
-    System.out.print(x + " ");
-    x *= x;
-} while (x < 200);
-//Answer here:
+// System.out.println("Loop #5");
+// x = 2;
+// do {
+//     System.out.print(x + " ");
+//     x *= x;
+// } while (x < 200);
+// //Answer here:
 
 
-System.out.println("Loop #6");
-String word = "a";
-do {
-    word = "b" + word + "b";
-} while (word.length() < 10);
-System.out.println(word);
-//Answer here:
+// System.out.println("Loop #6");
+// String word = "a";
+// do {
+//     word = "b" + word + "b";
+// } while (word.length() < 10);
+// System.out.println(word);
+// //Answer here:
 
-System.out.println("Loop #7");
-x = 100;
-do {
-    System.out.println(x / 10);
-    x = x / 2;
-} while (x > 0);
-//Answer here:
+// System.out.println("Loop #7");
+// x = 100;
+// do {
+//     System.out.println(x / 10);
+//     x = x / 2;
+// } while (x > 0);
+// //Answer here:
+int total = 0;
+for (int i = 1; i<8;i++) {
+    total=total+i;
+}
+System.out.println(total);
 
     }
 }

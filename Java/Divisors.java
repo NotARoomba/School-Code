@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class Divisors {
     public static void main(String[] args) {
-        printDivisors(45);
+        Scanner r = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int f = r.nextInt();
+        printDivisors(f);
         System.out.println();
-        printDivisorsForLoop(45);
+        //printDivisorsForLoop(45);
     }
     public static void printDivisors(int number) {
         int divisor = 1;
