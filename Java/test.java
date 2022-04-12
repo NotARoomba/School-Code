@@ -19,66 +19,49 @@ public static void main(String[] args) throws IOException {
     // int d = (int)(Math.random()*100 - 20);
     // int e = (int)(Math.random()*10 * 4);
     // System.out.println(a + " " +  b + " " + c + " " + d + " " + e);
-    System.out.println("Loop #1");
-int x = 1;
-do {
-    System.out.print(x + " ");
-    x = x + 10;
-} while (x < 100);
-//Answer here:
+    System.out.println( 1 % 5 );				// LINE 1
 
-// System.out.println("Loop #2");
-// int max = 10;
-// do {
-//     System.out.println("count down: " + max);
-//     max=max-1;
-// } while (max < 10);
-// //Answer here:
+System.out.println( 15 % 2 );				// LINE 2
 
-// 	System.out.println("Loop #3");
-// x = 250;
-// do {
-//     System.out.println(x);
-// } while (x % 3 != 0);
-// //Answer here:
+System.out.println( 5 + 9 * 2 );			// LINE 3
 
-// System.out.println("Loop #4");
-// x = 100;
-// do {
-//     System.out.println(x);
-//     x = x / 2;
-// } while (x % 2 == 0);
-// //Answer here:
+System.out.println( 'A' + 9 );				// LINE 4
 
-// System.out.println("Loop #5");
-// x = 2;
-// do {
-//     System.out.print(x + " ");
-//     x *= x;
-// } while (x < 200);
-// //Answer here:
+System.out.println( 5 * 9 + 2);			// LINE 5
 
+System.out.println( 'c' + 5 );				// LINE 6
 
-// System.out.println("Loop #6");
-// String word = "a";
-// do {
-//     word = "b" + word + "b";
-// } while (word.length() < 10);
-// System.out.println(word);
-// //Answer here:
+System.out.println( Math.pow(3,3) );    		// LINE 7
 
-// System.out.println("Loop #7");
-// x = 100;
-// do {
-//     System.out.println(x / 10);
-//     x = x / 2;
-// } while (x > 0);
-// //Answer here:
-int total = 0;
-for (int i = 1; i<8;i++) {
-    total=total+i;
-}
-System.out.println(total);
+System.out.println( Math.ceil(3.4) );    		// LINE 8
+
+System.out.println( Math.floor(4.6) );   		// LINE 9
+
+System.out.println( Math.sqrt(12) );    		// LINE 10
+
+System.out.println( Math.round(12.34) );   		// LINE 11
+
+System.out.println( Math.round(12.56) );   		// LINE 12
+
+System.out.println( Math.max(12,34));    		// LINE 13
+
+System.out.println( Math.min(12,34));    		// LINE 14
+
+System.out.println( Math.max(12.3,45.6));  	// LINE 15
+
+System.out.println( Math.min(12.3,45.6));  		// LINE 16
+
+System.out.println( Math.abs(-213));    		// LINE 17
+
+System.out.println( Math.abs(213));    		// LINE 18
+
+System.out.println( Math.ceil(Math.sqrt(17)));	// LINE 19
+
+System.out.println( (int)(Math.random() * 50 ));  		// LINE 20
+
+System.out.println( (int)(Math.random() * 1000 ));		// LINE 21
+
+System.out.println( (int)(Math.random() * 20 + 10));    	// LINE 22
 
     }
 }
