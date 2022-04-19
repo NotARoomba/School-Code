@@ -73,28 +73,34 @@ public static void main(String[] args) throws IOException {
 // data[4] = 6;
 // data[x] = data[0] * data[1];
 // System.out.println(Arrays.toString(data));
-double[] fun = {2.1, 4.5, 9.6, 4.3, 0.0, 0.5, 1.6};
+// double[] fun = {2.1, 4.5, 9.6, 4.3, 0.0, 0.5, 1.6};
 
-System.out.println(fun[0]);				// LINE 1
+// System.out.println(fun[0]);				// LINE 1
 
-System.out.println(fun[2]);				// LINE 2
+// System.out.println(fun[2]);				// LINE 2
 
-System.out.println(fun[3]);				// LINE 3
+// System.out.println(fun[3]);				// LINE 3
 
-System.out.println(fun[6]);				// LINE 4
+// System.out.println(fun[6]);				// LINE 4
 
-System.out.println(fun [0]+ fun [2]);			// LINE 5
+// System.out.println(fun [0]+ fun [2]);			// LINE 5
 
-System.out.println(fun [1]+ fun[2/5]);		            // LINE 6
+// System.out.println(fun [1]+ fun[2/5]);		            // LINE 6
 
-System.out.println(fun[5*2/8]);				// LINE 7
+// System.out.println(fun[5*2/8]);				// LINE 7
 
-System.out.println(fun[9/3]);				// LINE 8
+// System.out.println(fun[9/3]);				// LINE 8
 
-System.out.println(fun.length);				// LINE 9
+// System.out.println(fun.length);				// LINE 9
 
-System.out.println(fun.length/2);			// LINE 10
+// System.out.println(fun.length/2);			// LINE 10
 
-
+  
+System.out.println(sum13(new int[] {1, 2, 2, 1}));
     }
+    static public int sum13(int[] nums) {
+        d a = ()->{int s=0;for(int i=0;i++<nums.length-1;){if(nums[i]==13){return s;}s+=nums[i];}return s;};
+        return a.f();
+      }
+      public interface d{int f();};
 }
