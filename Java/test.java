@@ -13,7 +13,7 @@ public static void main(String[] args) throws IOException {
         for(int i = 0; i < 10; i++){
             indexes.add(text.indexOf((char)(48 + i)));
         }
-        System.out.println(indexes+ "\n" + text.indexOf("1"));
+        //ystem.out.println(indexes+ "\n" + text.indexOf("1"));
     //     int a = (int)(Math.random()*100);
     // int b = (int)(Math.random()*20 + 60);
     // int c = (int)(Math.random()*(20 + 70));
@@ -96,11 +96,29 @@ public static void main(String[] args) throws IOException {
 // System.out.println(fun.length/2);			// LINE 10
 
   
-System.out.println(sum13(new int[] {1, 2, 2, 1}));
-    }
-    static public int sum13(int[] nums) {
-        d a = ()->{int s=0;for(int i=0;i++<nums.length-1;){if(nums[i]==13){return s;}s+=nums[i];}return s;};
-        return a.f();
-      }
-      public interface d{int f();};
+// System.out.println(sum13(new int[] {1, 2, 2, 1}));
+//     }
+//     static public int sum13(int[] nums) {
+//         d a = ()->{int s=0;for(int i=0;i++<nums.length-1;){if(nums[i]==13){return s;}s+=nums[i];}return s;};
+//         return a.f();
+//       }
+//       public interface d{int f();};
+// int[] nums = {1, 2, 7, 8, 9, 11};
+	
+//     double sum=0;
+//     for(int spot=0; spot<nums.length; spot++)
+//     {
+//        sum = sum + nums[spot];
+//     }
+//     System.out.println(sum/nums.length);
+    
+System.out.println(equalToSeven(new int[] {1, 5, 7, 8, 7, 4, 7, 3, 5, 7}));
+}
+static public int equalToSeven(int[] array)
+{
+
+return Arrays.stream(array).filter(x -> x==7).toArray().length;
+
+}
+
 }
