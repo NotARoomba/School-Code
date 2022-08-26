@@ -1,5 +1,5 @@
 import java.util.*;
-public class main {
+public class PigLatin2 {
   public static void main(String[] args) {
     Scanner i = new Scanner(new Scanner(System.in).nextLine());
     while (i.hasNext()) {
