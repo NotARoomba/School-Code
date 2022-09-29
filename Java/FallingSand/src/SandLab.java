@@ -59,7 +59,7 @@ public class SandLab
     int r = (int)(Math.random() * grid.length);
     int c = (int)(Math.random() * grid[0].length);
     if (grid[r][c] == SAND) {
-      if (r+1 >= grid.length-1 && grid[r+1][c] == WATER) {
+      if (r+1 <= grid.length-1 && grid[r+1][c] == WATER) {
         grid[r][c] = WATER;
         grid[r+1][c] = EMPTY;
       }
