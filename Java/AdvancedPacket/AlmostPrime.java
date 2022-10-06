@@ -5,7 +5,7 @@ import java.util.*;
 
 public class AlmostPrime {
     public static void main(String[] args) throws FileNotFoundException {
-        File fi = new File("/Users/roomba/Documents/GitHub/School-Code/Java/AdvancedPacket/almostprime.dat");
+        File fi = new File(new File("AdvancedPacket/almostprime.dat").getAbsolutePath());
         Scanner data = new Scanner(fi);
         List<Integer> ap = new ArrayList<Integer>();
         while (data.hasNextLine()) {

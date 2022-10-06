@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Periodic2 {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner data = new Scanner(new File("/Users/roomba/Documents/GitHub/School-Code/Java/AdvancedPacket/periodic2.dat"));
+        Scanner data = new Scanner(new File(new File("AdvancedPacket/periodic2.dat").getAbsolutePath()));
         List<String> e = new ArrayList<String>();
         for (int i = 0; i < 100; i++) {
             e.add(data.next().toLowerCase());

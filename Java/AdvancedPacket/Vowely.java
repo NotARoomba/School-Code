@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Vowely {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner data = new Scanner(new File("/Users/roomba/Documents/GitHub/School-Code/Java/AdvancedPacket/vowely.dat"));
+        Scanner data = new Scanner(new File(new File("AdvancedPacket/vowely.dat").getAbsolutePath()));
         int n = Integer.parseInt(data.nextLine());
         for (int i = 0; i < n; i++) {
             String s = data.nextLine();

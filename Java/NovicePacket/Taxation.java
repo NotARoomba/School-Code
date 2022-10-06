@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Taxation {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner data = new Scanner(new File("/Users/roomba/Documents/GitHub/School-Code/Java/NovicePacket/taxation.dat"));
+        Scanner data = new Scanner(new File(new File("NovicePacket/taxation.dat").getAbsolutePath()));
         int n = Integer.parseInt(data.nextLine());
         double t = 0;
         for (int i = 0; i < n; i++) {

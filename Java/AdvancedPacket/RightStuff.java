@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class RightStuff {
     public static void main(String[] args) throws FileNotFoundException {
-        File fi = new File("/Users/roomba/Documents/GitHub/School-Code/Java/AdvancedPacket/rightstuff.dat");
+        File fi = new File(new File("AdvancedPacket/rightstuff.dat").getAbsolutePath());
         Scanner data = new Scanner(fi);
         int n = Integer.parseInt(data.nextLine());
         for (int i = 0; i < n; i++) {
