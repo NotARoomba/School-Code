@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class ArrayListHelper {
@@ -36,6 +37,47 @@ public class ArrayListHelper {
         }
         return t;
     }
-
+    public static ArrayList<Integer> downOrder(ArrayList<Integer> list) {
+        Collections.sort(list);
+        return list;
+    }
+    public static ArrayList<Integer> mathFib(int[] numbs) {
+        ArrayList<Integer> sums = new ArrayList<>();
+        for (int i = 0; i < numbs.length-1;i++) {
+            sums.add(numbs[i] + numbs[i+1]);
+        }
+        return sums;
+    }
+    public static int sum(int num) {
+        int a = 0;
+        while (num > 0) {
+            a +=num % 10;
+            num /=10;
+        }
+        return a;
+    }
+    public static ArrayList<Integer> total10(ArrayList<Integer> numbs) {
+        ArrayList<Integer> n = new ArrayList<>();
+        for (int i : numbs) {
+            int a = 0;
+            int f = i;
+            while (f > 0) {
+                a +=f % 10;
+                f /=10;
+            }
+            if (a==10) n.add(i);
+        }
+        return n;
+    }
+    public static boolean isEven(int num) {
+        return num / 2 == 0;
+    };
+    public static ArrayList<String> changeCase(ArrayList<String> list) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).length()%2==0) list.set(i, list.get(i).toUpperCase());
+            else list.set(i, list.get(i).toLowerCase());
+        }
+        return list;
+    }
 
 }

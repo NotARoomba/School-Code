@@ -5,14 +5,16 @@ import java.util.*;
 import java.util.ArrayList;
 public class test {
 public static void main(String[] args) throws IOException {
-    List<Integer> indexes = new ArrayList<Integer>();
-        String text = new BufferedReader(new FileReader("C:\\Windows\\explorer.exe")).lines().toString();
-        // for(int i = 0; i < 26; i++){
-        //     indexes.add(text.indexOf((char)(97 + i)));
-        // }
-        for(int i = 0; i < 10; i++){
-            indexes.add(text.indexOf((char)(48 + i)));
-        }
+//    List<Integer> indexes = new ArrayList<Integer>();
+//        String text = new BufferedReader(new FileReader("C:\\Windows\\explorer.exe")).lines().toString();
+//        // for(int i = 0; i < 26; i++){
+//        //     indexes.add(text.indexOf((char)(97 + i)));
+//        // }
+//        for(int i = 0; i < 10; i++){
+//            indexes.add(text.indexOf((char)(48 + i)));
+//        }
+        ArrayList<Integer> f = mathFib(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
+        System.out.print(changeCase(new ArrayList<>(Arrays.asList("Hello", "World", "Cars", "at"))));
         //ystem.out.println(indexes+ "\n" + text.indexOf("1"));
     //     int a = (int)(Math.random()*100);
     // int b = (int)(Math.random()*20 + 60);
@@ -112,7 +114,7 @@ public static void main(String[] args) throws IOException {
 //     }
 //     System.out.println(sum/nums.length);
     
-System.out.println(equalToSeven(new int[] {1, 5, 7, 8, 7, 4, 7, 3, 5, 7}));
+//System.out.println(equalToSeven(new int[] {1, 5, 7, 8, 7, 4, 7, 3, 5, 7}));
 }
 static public int equalToSeven(int[] array)
 {
@@ -121,4 +123,39 @@ return Arrays.stream(array).filter(x -> x==7).toArray().length;
 
 }
 
+    public static ArrayList<Integer> mathFib(int[] numbs) {
+        ArrayList<Integer> sums = new ArrayList<>();
+        for (int i = 0; i < numbs.length-1;i++) {
+            sums.add(numbs[i] + numbs[i+1]);
+        }
+        return sums;
+    }
+    public static int sum(int num) {
+        int a = 0;
+        while (num > 0) {
+            a +=num % 10;
+            num /=10;
+        }
+        return a;
+    }
+    public static ArrayList<Integer> total10(ArrayList<Integer> numbs) {
+        ArrayList<Integer> n = new ArrayList<>();
+        for (int i : numbs) {
+            int a = 0;
+            int f = i;
+            while (f > 0) {
+                a +=f % 10;
+                f /=10;
+            }
+            if (a==10) n.add(i);
+        }
+        return n;
+    }
+    public static ArrayList<String> changeCase(ArrayList<String> list) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).length()%2==0) list.set(i, list.get(i).toUpperCase());
+            else list.set(i, list.get(i).toLowerCase());
+        }
+        return list;
+    }
 }
