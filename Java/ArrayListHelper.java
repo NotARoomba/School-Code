@@ -79,5 +79,26 @@ public class ArrayListHelper {
         }
         return list;
     }
-
+    public static String dubLetterHelper(String word) {
+        String f = "";
+        for (char a : word.toCharArray()) {
+            f += a + a;
+        }
+        return f.toString();
+    }
+    public static void dubletter(ArrayList<String> words) {
+        for (int i = 0; i < words.size(); i++) {
+            words.set(i, dubLetterHelper(words.get(i)));
+        }
+    }
+    public static boolean isPalindrome(String word) {
+        return new StringBuilder(word).reverse().toString() == word;
+    }
+    public void allPalindromes(ArrayList<String> words) {
+        for (int i = 0; i < words.size(); i++) {
+            if (!isPalindrome(words.get(i))) {
+                words.remove(i);
+            }
+        }
+    }
 }

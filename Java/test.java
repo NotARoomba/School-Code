@@ -14,7 +14,7 @@ public static void main(String[] args) throws IOException {
 //            indexes.add(text.indexOf((char)(48 + i)));
 //        }
         ArrayList<Integer> f = mathFib(new int[]{1, 2, 3, 4, 5, 6, 7, 8});
-        System.out.print(changeCase(new ArrayList<>(Arrays.asList("Hello", "World", "Cars", "at"))));
+        System.out.println(has10Before5(new int[][]{{3},{5,2},{5,5},{10,2,3,4,5,5}} ));
         //ystem.out.println(indexes+ "\n" + text.indexOf("1"));
     //     int a = (int)(Math.random()*100);
     // int b = (int)(Math.random()*20 + 60);
@@ -116,6 +116,18 @@ public static void main(String[] args) throws IOException {
     
 //System.out.println(equalToSeven(new int[] {1, 5, 7, 8, 7, 4, 7, 3, 5, 7}));
 }
+    public static boolean has10Before5(int[][] mat) {
+        int a = 0;
+        int b = 0;
+        for (int[] i : mat) {
+            for (int f : i) {
+                a = a==0&&(f==10||f==5)?f:a==10&&f==5?105:a;
+                b = b==0&&(f==10||f==5)?f:b==10&&f==5?105:b;
+            }
+            a = a==105?a:0;
+        }
+        return (a==105||b==105);
+    }
 static public int equalToSeven(int[] array)
 {
 
