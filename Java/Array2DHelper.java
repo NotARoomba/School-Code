@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Array2DHelper {
@@ -74,6 +75,40 @@ public class Array2DHelper {
         }
         return (a==105||b==105);
     }
+    public static boolean has0(int num) {
+        return String.valueOf(num).contains("0");
+    }
+    public static ArrayList<Integer> listZeroDigits(int[][] mat) {
+        ArrayList<Integer> a = new ArrayList<>();
+        for (int[] i : mat) {
+            for (int f : i) {
+                if (has0(f)) {
+                    a.add(f);
+                }
+            }
+        }
+        return a;
+    }
+    public static int[][] doubleMat(int[][] mat) {
+        int[][] m = mat;
+        for (int i = 0; i < mat.length; i++) {
+            for (int f = 0;f<mat[i].length;i++) {
+                m[i][f] = mat[i][f]*2;
+            }
+        }
+        return m;
+    }
+    public static int[][] transpose(int[][] mat) {
+        int[][] m = new int[mat[0].length][mat.length];
+        for (int i = 0; i < mat.length; i++) {
+            for (int f = 0;f<mat[i].length;i++) {
+                m[f][i] = mat[i][f];
+            }
+        }
+        return m;
+    }
+    public static String
+
 
 
 
